@@ -1,22 +1,131 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://Action RPG Resources/Action RPG Resources/World/Bush.png" type="Texture" id=1]
 [ext_resource path="res://Assets/Player/Player.png" type="Texture" id=2]
 [ext_resource path="res://Assets/Player/Player.gd" type="Script" id=3]
+[ext_resource path="res://Assets/City/City.png" type="Texture" id=4]
+
+[sub_resource type="TileSet" id=1]
+0/name = "Road"
+0/texture = ExtResource( 4 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 112, 112 )
+0/tile_mode = 1
+0/autotile/bitmask_mode = 1
+0/autotile/bitmask_flags = [ Vector2( 2, 0 ), 432, Vector2( 2, 1 ), 438, Vector2( 2, 2 ), 510, Vector2( 2, 4 ), 447, Vector2( 2, 6 ), 54, Vector2( 3, 0 ), 504, Vector2( 3, 1 ), 511, Vector2( 3, 6 ), 63, Vector2( 4, 0 ), 216, Vector2( 4, 1 ), 219, Vector2( 4, 2 ), 507, Vector2( 4, 4 ), 255, Vector2( 4, 6 ), 27, Vector2( 5, 2 ), 2 ]
+0/autotile/icon_coordinate = Vector2( 0, 0 )
+0/autotile/tile_size = Vector2( 16, 16 )
+0/autotile/spacing = 0
+0/autotile/occluder_map = [  ]
+0/autotile/navpoly_map = [  ]
+0/autotile/priority_map = [  ]
+0/autotile/z_index_map = [  ]
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shapes = [  ]
+0/z_index = 0
+1/name = "Ground"
+1/texture = ExtResource( 4 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 32, 32 )
+1/tile_mode = 1
+1/autotile/bitmask_mode = 1
+1/autotile/bitmask_flags = [ Vector2( 0, 0 ), 432, Vector2( 0, 1 ), 54, Vector2( 1, 0 ), 216, Vector2( 1, 1 ), 27 ]
+1/autotile/icon_coordinate = Vector2( 0, 0 )
+1/autotile/tile_size = Vector2( 16, 16 )
+1/autotile/spacing = 0
+1/autotile/occluder_map = [  ]
+1/autotile/navpoly_map = [  ]
+1/autotile/priority_map = [  ]
+1/autotile/z_index_map = [  ]
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shapes = [  ]
+1/z_index = 0
+2/name = "House"
+2/texture = ExtResource( 4 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 288, 112, 128 )
+2/tile_mode = 1
+2/autotile/bitmask_mode = 1
+2/autotile/bitmask_flags = [ Vector2( 0, 4 ), 432, Vector2( 0, 5 ), 438, Vector2( 0, 6 ), 438, Vector2( 0, 7 ), 54, Vector2( 1, 4 ), 504, Vector2( 1, 5 ), 511, Vector2( 1, 6 ), 511, Vector2( 1, 7 ), 63, Vector2( 2, 4 ), 504, Vector2( 2, 5 ), 511, Vector2( 2, 6 ), 511, Vector2( 2, 7 ), 63, Vector2( 3, 4 ), 508, Vector2( 3, 5 ), 511, Vector2( 3, 6 ), 511, Vector2( 3, 7 ), 63, Vector2( 4, 4 ), 216, Vector2( 4, 5 ), 219, Vector2( 4, 6 ), 219, Vector2( 4, 7 ), 27 ]
+2/autotile/icon_coordinate = Vector2( 0, 0 )
+2/autotile/tile_size = Vector2( 16, 16 )
+2/autotile/spacing = 0
+2/autotile/occluder_map = [  ]
+2/autotile/navpoly_map = [  ]
+2/autotile/priority_map = [  ]
+2/autotile/z_index_map = [  ]
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shapes = [  ]
+2/z_index = 0
+3/name = "WholeHouse"
+3/texture = ExtResource( 4 )
+3/tex_offset = Vector2( 0, 0 )
+3/modulate = Color( 1, 1, 1, 1 )
+3/region = Rect2( 0, 352, 80, 64 )
+3/tile_mode = 0
+3/occluder_offset = Vector2( 0, 0 )
+3/navigation_offset = Vector2( 0, 0 )
+3/shapes = [  ]
+3/z_index = 0
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 4.76334
+height = 4.30775
+
+[sub_resource type="TileSet" id=3]
+0/name = "House"
+0/texture = ExtResource( 4 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 352, 80, 64 )
+0/tile_mode = 0
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shapes = [  ]
+0/z_index = 0
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 6.4, 9.5 )
 
 [node name="World" type="Node2D"]
 
-[node name="Bush" type="Sprite" parent="."]
-position = Vector2( 29.7358, 27.6481 )
-texture = ExtResource( 1 )
+[node name="Background" type="TileMap" parent="."]
+position = Vector2( -112.113, 67.2956 )
+tile_set = SubResource( 1 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( -327673, 1, 0, -327672, 1, 0, -327671, 1, 0, -327670, 1, 0, -327669, 1, 0, -327668, 1, 0, -327667, 1, 0, -327666, 1, 0, -327665, 1, 0, -327664, 1, 0, -327663, 1, 0, -327662, 1, 0, -327661, 1, 0, -327660, 1, 0, -327659, 1, 0, -327658, 1, 0, -327657, 1, 0, -327656, 1, 0, -327655, 1, 0, -327654, 1, 1, -262137, 1, 0, -262136, 1, 0, -262135, 1, 0, -262134, 1, 0, -262133, 1, 0, -262132, 1, 0, -262131, 1, 0, -262130, 1, 0, -262129, 1, 0, -262128, 1, 0, -262127, 1, 0, -262126, 1, 0, -262125, 1, 0, -262124, 1, 0, -262123, 1, 0, -262122, 1, 0, -262121, 1, 0, -262120, 1, 0, -262119, 1, 0, -262118, 1, 0, -196601, 1, 0, -196600, 1, 0, -196599, 1, 0, -196598, 1, 0, -196597, 1, 0, -196596, 1, 0, -196595, 1, 0, -196594, 1, 0, -196593, 1, 0, -196592, 1, 0, -196591, 1, 0, -196590, 1, 0, -196589, 1, 0, -196588, 1, 0, -196587, 1, 0, -196586, 1, 0, -196585, 1, 0, -196584, 1, 0, -196583, 1, 0, -196582, 1, 0, -131065, 1, 0, -131064, 1, 0, -131063, 1, 0, -131062, 1, 0, -131061, 1, 0, -131060, 1, 0, -131059, 1, 0, -131058, 1, 0, -131057, 1, 0, -131056, 1, 0, -131055, 1, 0, -131054, 1, 0, -131053, 1, 0, -131052, 1, 0, -131051, 1, 0, -131050, 1, 0, -131049, 1, 0, -131048, 1, 0, -131047, 1, 0, -131046, 1, 0, -65529, 1, 0, -65528, 1, 0, -65527, 1, 0, -65526, 1, 0, -65525, 1, 0, -65524, 1, 0, -65523, 1, 0, -65522, 1, 0, -65521, 1, 0, -65520, 1, 0, -65519, 1, 0, -65518, 1, 0, -65517, 1, 0, -65516, 1, 0, -65515, 1, 0, -65514, 1, 0, -65513, 1, 0, -65512, 1, 0, -65511, 1, 0, -65510, 1, 0, 0, 0, 0, 7, 1, 0, 8, 1, 0, 9, 1, 0, 10, 1, 0, 11, 1, 0, 12, 1, 0, 13, 1, 0, 14, 1, 0, 15, 0, 2, 16, 0, 3, 17, 0, 4, 18, 1, 0, 19, 1, 0, 20, 1, 0, 21, 1, 0, 22, 1, 0, 23, 1, 0, 24, 1, 0, 25, 1, 0, 26, 1, 0, 65537, 0, 0, 65543, 1, 0, 65544, 1, 0, 65545, 1, 0, 65546, 1, 0, 65547, 1, 0, 65548, 1, 0, 65549, 1, 0, 65550, 1, 65537, 65551, 0, 65538, 65552, 0, 65539, 65553, 0, 65540, 65554, 1, 65536, 65555, 1, 0, 65556, 1, 0, 65557, 1, 0, 65558, 1, 0, 65559, 1, 0, 65560, 1, 0, 65561, 1, 0, 65562, 1, 0, 131074, 0, 0, 131079, 1, 0, 131080, 0, 2, 131081, 0, 3, 131082, 0, 3, 131083, 0, 3, 131084, 0, 3, 131085, 0, 3, 131086, 0, 3, 131087, 0, 131074, 131088, 0, 65539, 131089, 0, 131076, 131090, 0, 3, 131091, 0, 3, 131092, 0, 3, 131093, 0, 3, 131094, 0, 3, 131095, 0, 3, 131096, 0, 3, 131097, 0, 4, 131098, 1, 0, 196610, 0, 0, 196615, 0, 2, 196616, 0, 131074, 196617, 0, 65539, 196618, 0, 65539, 196619, 0, 65539, 196620, 0, 65539, 196621, 0, 65539, 196622, 0, 65539, 196623, 0, 65539, 196624, 0, 65539, 196625, 0, 65539, 196626, 0, 65539, 196627, 0, 65539, 196628, 0, 65539, 196629, 0, 65539, 196630, 0, 65539, 196631, 0, 65539, 196632, 0, 65539, 196633, 0, 131076, 196634, 0, 4, 262147, 0, 0, 262151, 0, 65538, 262152, 0, 65539, 262153, 0, 65539, 262154, 0, 65539, 262155, 0, 65539, 262156, 0, 65539, 262157, 0, 65539, 262158, 0, 65539, 262159, 0, 65539, 262160, 0, 65539, 262161, 0, 65539, 262162, 0, 65539, 262163, 0, 65539, 262164, 0, 65539, 262165, 0, 65539, 262166, 0, 65539, 262167, 0, 65539, 262168, 0, 65539, 262169, 0, 65539, 262170, 0, 65540, 327684, 0, 0, 327687, 0, 65538, 327688, 0, 65539, 327689, 0, 65539, 327690, 0, 65539, 327691, 0, 65539, 327692, 0, 65539, 327693, 0, 65539, 327694, 0, 65539, 327695, 0, 65539, 327696, 0, 65539, 327697, 0, 65539, 327698, 0, 65539, 327699, 0, 65539, 327700, 0, 65539, 327701, 0, 65539, 327702, 0, 65539, 327703, 0, 65539, 327704, 0, 65539, 327705, 0, 65539, 327706, 0, 65540, 393221, 0, 0, 393223, 0, 393218, 393224, 0, 393219, 393225, 0, 393219, 393226, 0, 393219, 393227, 0, 393219, 393228, 0, 393219, 393229, 0, 393219, 393230, 0, 393219, 393231, 0, 393219, 393232, 0, 393219, 393233, 0, 393219, 393234, 0, 393219, 393235, 0, 393219, 393236, 0, 393219, 393237, 0, 393219, 393238, 0, 393219, 393239, 0, 393219, 393240, 0, 393219, 393241, 0, 393219, 393242, 0, 393220, 458758, 0, 0, 524295, 0, 0, 589831, 0, 0, 655368, 0, 0, 720905, 0, 0, 786442, 0, 0 )
 
-[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
-position = Vector2( 87.1689, 70.9426 )
+[node name="Player" type="KinematicBody2D" parent="."]
+position = Vector2( 83.3099, 62.5065 )
 script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="KinematicBody2D"]
+[node name="PlayerSprite" type="Sprite" parent="Player"]
 texture = ExtResource( 2 )
 hframes = 60
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
+position = Vector2( -0.62822, 8.43604 )
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="House" type="StaticBody2D" parent="."]
+
+[node name="TileMap" type="TileMap" parent="House"]
+tile_set = SubResource( 3 )
+cell_size = Vector2( 16, 16 )
+format = 1
+tile_data = PoolIntArray( 65543, 0, 0 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="House"]
+position = Vector2( 152, 60 )
+scale = Vector2( 5, 2 )
+shape = SubResource( 4 )
