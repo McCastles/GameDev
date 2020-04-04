@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Action RPG Resources/Action RPG Resources/World/Bush.png" type="Texture" id=1]
+
+[node name="World" type="Node2D"]
+
+[node name="Bush" type="Sprite" parent="."]
+position = Vector2( 29.7358, 27.6481 )
+texture = ExtResource( 1 )
