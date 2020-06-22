@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Assets/room2.png" type="Texture" id=1]
+
+[node name="Room2" type="Node2D"]
+scale = Vector2( 0.370731, 0.632328 )
+
+[node name="room2" type="Sprite" parent="."]
+position = Vector2( 1412.37, 473.707 )
+scale = Vector2( 0.869325, 0.840193 )
+texture = ExtResource( 1 )
