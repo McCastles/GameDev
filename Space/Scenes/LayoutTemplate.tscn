@@ -1,0 +1,60 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Resources/IsometricTileSet.tres" type="TileSet" id=1]
+
+[node name="Layout" type="Node2D"]
+
+[node name="Layer 0" type="TileMap" parent="."]
+scale = Vector2( 0.3, 0.25 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 505, 300 )
+format = 1
+
+[node name="Layer 1" type="TileMap" parent="."]
+position = Vector2( 0, 15 )
+scale = Vector2( 0.3, 0.25 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 505, 300 )
+format = 1
+
+[node name="Layer 2" type="TileMap" parent="."]
+position = Vector2( 0, 30 )
+scale = Vector2( 0.3, 0.25 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 505, 300 )
+format = 1
+
+[node name="Layer 3" type="TileMap" parent="."]
+position = Vector2( 0, 45 )
+scale = Vector2( 0.3, 0.25 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 505, 300 )
+format = 1
+
+[node name="Layer 4" type="TileMap" parent="."]
+position = Vector2( 0, 60 )
+scale = Vector2( 0.3, 0.25 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 505, 300 )
+format = 1
+
+[node name="Layer 5" type="TileMap" parent="."]
+position = Vector2( 0, 75 )
+scale = Vector2( 0.3, 0.25 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 505, 300 )
+format = 1
+
+[node name="Layer 6" type="TileMap" parent="."]
+position = Vector2( 0, 90 )
+scale = Vector2( 0.3, 0.25 )
+mode = 1
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 505, 300 )
+format = 1
