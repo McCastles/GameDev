@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/room1.png-502a01b3cdd076807d6879117a4df7f6.stex"
+path="res://.import/room_example.png-0e4a11e3d558af485bc0972a9e955e5b.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/room1.png"
-dest_files=[ "res://.import/room1.png-502a01b3cdd076807d6879117a4df7f6.stex" ]
+source_file="res://Assets/room_example.png"
+dest_files=[ "res://.import/room_example.png-0e4a11e3d558af485bc0972a9e955e5b.stex" ]
 
 [params]
 
@@ -24,7 +24,7 @@ flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2
-process/fix_alpha_border=true
+process/fix_alpha_border=false
 process/premult_alpha=false
 process/HDR_as_SRGB=false
 process/invert_color=false
