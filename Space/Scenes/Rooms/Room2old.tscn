@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Scenes/Misc/SceneChanger.tscn" type="PackedScene" id=2]
+
+
+
+[node name="Room2" type="Node2D"]
+
+[node name="SceneChanger" parent="." instance=ExtResource( 2 )]
+left_room = "res://Scenes/Room1.tscn"

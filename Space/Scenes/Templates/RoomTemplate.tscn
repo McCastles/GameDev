@@ -1,0 +1,97 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/InteractableObject.gd" type="Script" id=3]
+[ext_resource path="res://Scenes/Misc/SceneChanger.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Resources/IsometricTileSet.tres" type="TileSet" id=5]
+
+
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 64.427, 32.4983 )
+
+[node name="Room1" type="Node2D"]
+
+[node name="InteractableObject" type="Area2D" parent="."]
+visible = false
+position = Vector2( 155.972, 172.722 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="icon" type="Sprite" parent="InteractableObject"]
+scale = Vector2( 2, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableObject"]
+shape = SubResource( 1 )
+
+[node name="SceneChanger" parent="." instance=ExtResource( 4 )]
+right_room = "res://Scenes/Room2.tscn"
+
+[node name="Layout" type="Node2D" parent="."]
+position = Vector2( 160, 116 )
+
+[node name="Layer 0" type="TileMap" parent="Layout"]
+scale = Vector2( 0.2, 0.15 )
+mode = 1
+tile_set = ExtResource( 5 )
+cell_size = Vector2( 505, 300 )
+format = 1
+tile_data = PoolIntArray( -196599, 10, 0, -196598, 10, 0, -196597, 10, 0, -131067, 10, 0, -131066, 10, 0, -131065, 10, 0, -131064, 10, 0, -131063, 10, 0, -131062, 10, 0, -131061, 10, 0, -131060, 10, 0, -131059, 10, 0, -131058, 10, 0, -65531, 10, 0, -65530, 10, 0, -65529, 10, 0, -65528, 10, 0, -65527, 10, 0, -65526, 10, 0, -65525, 10, 0, -65524, 10, 0, -65523, 10, 0, -65522, 10, 0, 5, 10, 0, 6, 10, 0, 7, 10, 0, 8, 10, 0, 9, 10, 0, 10, 10, 0, 11, 10, 0, 12, 10, 0, 13, 10, 0, 14, 10, 0, 65541, 10, 0, 65542, 10, 0, 65543, 10, 0, 65544, 10, 0, 65545, 10, 0, 65546, 10, 0, 65547, 10, 0, 65548, 10, 0, 65549, 10, 0, 65550, 10, 0, 131077, 10, 0, 131078, 10, 0, 131079, 10, 0, 131080, 10, 0, 131081, 10, 0, 131082, 10, 0, 131083, 10, 0, 131084, 10, 0, 131085, 10, 0, 131086, 10, 0, 196613, 10, 0, 196614, 10, 0, 196615, 10, 0, 196616, 10, 0, 196617, 10, 0, 196618, 10, 0, 196619, 10, 0, 196620, 10, 0, 196621, 10, 0, 196622, 10, 0, 262149, 10, 0, 262150, 10, 0, 262151, 10, 0, 262152, 10, 0, 262153, 10, 0, 262154, 10, 0, 262155, 10, 0, 262156, 10, 0, 262157, 10, 0, 262158, 10, 0, 327685, 10, 0, 327686, 10, 0, 327687, 10, 0, 327688, 10, 0, 327689, 10, 0, 327690, 10, 0, 327691, 10, 0, 327692, 10, 0, 327693, 10, 0, 327694, 10, 0, 393221, 10, 0, 393222, 10, 0, 393223, 10, 0, 393224, 10, 0, 393225, 10, 0, 393226, 10, 0, 393227, 10, 0, 393228, 10, 0, 393229, 10, 0, 393230, 10, 0, 458757, 10, 0, 458758, 10, 0, 458759, 10, 0, 458760, 10, 0, 458761, 10, 0, 458762, 10, 0, 458763, 10, 0, 458764, 10, 0, 458765, 10, 0, 458766, 10, 0 )
+
+[node name="Layer 1" type="TileMap" parent="Layout"]
+position = Vector2( 0, 15 )
+scale = Vector2( 0.2, 0.15 )
+mode = 1
+tile_set = ExtResource( 5 )
+cell_size = Vector2( 505, 300 )
+format = 1
+tile_data = PoolIntArray( -196604, 20, 0, -196603, 7, 0, -196602, 7, 0, -196599, 7, 0, -196598, 7, 0, -196597, 7, 0, -196596, 8, 0, -196595, 8, 0, -131068, 20, 0, -65532, 20, 0, 4, 20, 0, 196612, 20, 0, 262148, 20, 0, 327684, 15, 0, 393220, 15, 0 )
+
+[node name="Layer 2" type="TileMap" parent="Layout"]
+position = Vector2( 0, 30 )
+scale = Vector2( 0.2, 0.15 )
+mode = 1
+tile_set = ExtResource( 5 )
+cell_size = Vector2( 505, 300 )
+format = 1
+tile_data = PoolIntArray( -262141, 20, 0, -262140, 7, 0, -262139, 7, 0, -262136, 7, 0, -262135, 7, 0, -262134, 7, 0, -262133, 8, 0, -262132, 8, 0, -196605, 20, 0, -131069, 20, 0, -65533, 20, 0, 131075, 20, 0, 196611, 20, 0, 262147, 15, 0, 327683, 15, 0 )
+
+[node name="Layer 3" type="TileMap" parent="Layout"]
+position = Vector2( 0, 45 )
+scale = Vector2( 0.2, 0.15 )
+mode = 1
+tile_set = ExtResource( 5 )
+cell_size = Vector2( 505, 300 )
+format = 1
+tile_data = PoolIntArray( -327678, 20, 0, -327677, 7, 0, -327676, 7, 0, -327673, 7, 0, -327672, 7, 0, -327671, 7, 0, -327670, 8, 0, -327669, 8, 0, -262142, 20, 0, -196606, 20, 0, -131070, 20, 0, 65538, 20, 0, 131074, 20, 0, 196610, 15, 0, 262146, 15, 0 )
+
+[node name="Layer 4" type="TileMap" parent="Layout"]
+position = Vector2( 0, 60 )
+scale = Vector2( 0.2, 0.15 )
+mode = 1
+tile_set = ExtResource( 5 )
+cell_size = Vector2( 505, 300 )
+format = 1
+tile_data = PoolIntArray( -393215, 20, 0, -393214, 7, 0, -393213, 7, 0, -393210, 7, 0, -393209, 7, 0, -393208, 7, 0, -393207, 8, 0, -393206, 8, 0, -327679, 20, 0, -262143, 20, 0, -196607, 20, 0, 1, 20, 0, 65537, 20, 0, 131073, 15, 0, 196609, 15, 0 )
+
+[node name="Layer 5" type="TileMap" parent="Layout"]
+position = Vector2( 0, 75 )
+scale = Vector2( 0.2, 0.15 )
+mode = 1
+tile_set = ExtResource( 5 )
+cell_size = Vector2( 505, 300 )
+format = 1
+tile_data = PoolIntArray( -458752, 20, 0, -458751, 7, 0, -458750, 7, 0, -458749, 7, 0, -458748, 7, 0, -458747, 7, 0, -458746, 7, 0, -458743, 8, 0, -393216, 20, 0, -327680, 20, 0, -262144, 20, 0, -196608, 20, 0, -131072, 20, 0, -65536, 20, 0, 0, 20, 0, 65536, 15, 0, 131072, 15, 0 )
+
+[node name="Layer 6" type="TileMap" parent="Layout"]
+position = Vector2( 0, 90 )
+scale = Vector2( 0.2, 0.15 )
+mode = 1
+tile_set = ExtResource( 5 )
+cell_size = Vector2( 505, 300 )
+format = 1
+tile_data = PoolIntArray( -458753, 20, 0, -524288, 7, 0, -524287, 7, 0, -524286, 7, 0, -524285, 7, 0, -524284, 7, 0, -524283, 7, 0, -524282, 7, 0, -524281, 8, 0, -524280, 8, 0, -393217, 20, 0, -327681, 20, 0, -262145, 20, 0, -196609, 20, 0, -131073, 20, 0, -65537, 20, 0, -1, 20, 0, 65535, 20, 0, 131071, 20, 0 )
+[connection signal="input_event" from="InteractableObject" to="InteractableObject" method="_on_InteractableObject_input_event"]
