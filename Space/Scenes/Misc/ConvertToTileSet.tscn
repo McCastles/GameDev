@@ -29,126 +29,100 @@
 [node name="World" type="Node2D"]
 
 [node name="block (1)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
 texture = ExtResource( 1 )
 
 [node name="block (2)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 2 )
 
 [node name="block (3)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 20 )
 
 [node name="block (4)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 14 )
 
 [node name="block (5)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 3 )
 
 [node name="block (6)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 16 )
 
 [node name="block (7)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 21 )
 
 [node name="block (8)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 25 )
 
 [node name="block (9)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 10 )
 
 [node name="grass-block (1)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 24 )
 
 [node name="grass-block (2)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 19 )
 
 [node name="grass-block (3)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 23 )
 
 [node name="grass-block (4)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 11 )
 
 [node name="grass-block (5)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 4 )
 
 [node name="grass-block (6)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 22 )
 
 [node name="smoth-block (1)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 6 )
 
 [node name="smoth-block (2)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 18 )
 
 [node name="smoth-block (3)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 15 )
 
 [node name="smoth-block (4)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 9 )
 
 [node name="smoth-block (5)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 8 )
 
 [node name="snow-block (1)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 12 )
 
 [node name="snow-block (2)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 7 )
 
 [node name="staircase (1)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 5 )
 
 [node name="staircase (2)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 13 )
 
 [node name="staircase (3)" type="Sprite" parent="."]
-visible = false
-scale = Vector2( 0.3, 0.25 )
+scale = Vector2( 1, 0.9 )
 texture = ExtResource( 17 )
