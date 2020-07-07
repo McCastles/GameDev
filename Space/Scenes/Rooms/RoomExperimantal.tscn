@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/Templates/LayoutTemplate.tscn" type="PackedScene" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/InteractableObject.gd" type="Script" id=3]
+[ext_resource path="res://Scenes/Misc/SceneChanger.tscn" type="PackedScene" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 64.427, 32.4983 )
+
+[node name="Room1" type="Node2D"]
+position = Vector2( -8.35095, 0 )
+
+[node name="InteractableObject" type="Area2D" parent="."]
+visible = false
+position = Vector2( 155.972, 172.722 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="icon" type="Sprite" parent="InteractableObject"]
+scale = Vector2( 2, 1 )
+texture = ExtResource( 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractableObject"]
+shape = SubResource( 1 )
+
+[node name="SceneChanger" parent="." instance=ExtResource( 4 )]
+
+[node name="Layout" parent="." instance=ExtResource( 1 )]
+[connection signal="input_event" from="InteractableObject" to="InteractableObject" method="_on_InteractableObject_input_event"]
